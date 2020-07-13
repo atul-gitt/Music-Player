@@ -1,0 +1,344 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #0C1129;
+	color: white;
+}
+
+/* Navigation Section */
+nav {
+	width: 100%;
+	height: 125px;
+	/*position: sticky;
+	top: 0;
+	left: 0;*/
+	margin: 5px 5px 0px 0px;
+	box-sizing: border-box;
+	background-color: #0C1129;
+}
+
+.logo{
+	width: 20%;
+	display: flex;
+	font-style: 50px;
+	float: left;
+	font-family: sans-serif;
+}
+.logo img{
+	width: 125px;
+	height: 125px;
+}
+.logo span{
+	font-weight: normal;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0px;
+	padding-left: 0px;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+}
+i {
+ 	color: white;
+ }
+.search-box {
+	margin: 30px 10px 0px 20px;
+	height: 30px;
+	width: 220px;
+	display: flex;
+	background-color: #714EA5;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+::placeholder {
+	color: white;
+}
+.search-box input {
+	color: white;
+	background-color: #714EA5;
+	border: 0px;
+}
+.search-box i{
+	padding: 5px 5px;
+}
+
+#login-img img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+#fav {
+	width: 10%;
+	margin: 30px 50px 0px 50px;
+	font-size: 1.5rem;
+}
+#buffer {
+	width: 30%;
+}
+#bell {
+	margin: 30px 0px 0px 0px;
+	font-size: 30px;
+}
+#login-img{
+	margin: 20px 10px 0px 20px;
+	float: right;
+}
+
+/* Player */
+
+#player {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 0px;
+	width: 0px;
+	outline: none;
+	z-index: 2;
+}
+#player:target {
+	width: 100%;
+	height: 50px;
+}
+/* Central carousel */
+
+main {
+	width: 60%;
+	display: inline-block;
+}
+
+.carousel {
+	margin: 50px 10px 0px 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel-img img {
+	width: 250px;
+	height: 250px;
+}
+
+.carousel-img:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px 5px #714EA5;
+}
+
+/* Latest Release */
+
+#heading {
+	margin-left: 25px;
+	letter-spacing: 1px;
+}
+
+#lr-container {
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.lr-img {
+	display: inline-block;
+}
+.lr-img img {
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.lr-details {
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	margin-left: 30px;
+	box-sizing: border-box;
+}
+
+#lr-details-time {
+	float: right;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.lr-details span {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.lr-details i {
+	float: right;
+}
+
+.lr-details p {
+	vertical-align: middle;
+}
+
+/* Popular Artists*/
+
+#pa-container {
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.artist img {
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+}
+
+.artist h4 {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/* stations */
+
+#stations {
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	background-color: #101642;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+#station-logo img {
+	width: 125px;
+	height: 125px;
+	margin: 10px 20px 10px 10px;
+}
+
+.stations {
+	margin: auto;
+	position: relative;
+}
+.stations img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+.station-name {
+	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	letter-spacing: 1px;
+  	cursor: pointer;
+}
+
+/* More Stations */
+
+#more-stations {
+	margin-top: 20px;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.station-container {
+	position: relative;
+}
+.station-container img {
+	height: 125px;
+	width: 250px;
+	opacity: 0.5;
+}
+.station-container img:hover {
+	transform: scale(1.1);
+}
+
+/* Latest */
+
+#latest {
+	margin-left: 25px;
+	margin-top: 20px;
+}
+.le-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.song img {
+	width: 100px;
+	height: 100px;
+}
+
+.song p {
+	margin-top: -20px;
+	font-size: 15px;
+}
+
+.song h4 {
+	margin-top: 0px;
+}
+/* Queue */
+
+aside {
+	width: 30%;
+	margin-left: 40px;
+	display: inline-block;
+	vertical-align: top;
+	position: sticky;
+	top: 0px;
+}
+
+aside h3 {
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	display: inline-block;
+}
+
+.queue-head span {
+	margin-top: 26px;
+	color: blue;
+	float: right;
+}
+
+.queue-head i {
+	color: blue;
+}
+
+.queue-head ul li{
+	list-style: none;
+	display: none;
+}
+
+.queue-click:hover ul li {
+	display: block;
+}
+
+.queue-list-sl{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.queue-list-name {
+	padding-left: 20px;
+	padding-right: 125px;
+}
+.queue-list-name p {
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+}
+.queue-list-name span {
+	font-size: 0.9rem;
+	color: grey;
+	font-weight: bold;
+}
+.queue-list-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 1px white;
+}
